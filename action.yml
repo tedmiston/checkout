@@ -1,8 +1,8 @@
-name: 'Checkout'
-description: 'Checkout a Git repository at a particular version'
+name: Checkout
+description: Checkout a Git repository at a particular version
 inputs:
   repository:
-    description: 'Repository name with owner. For example, actions/checkout'
+    description: Repository name with owner. For example, actions/checkout
     default: ${{ github.repository }}
   ref:
     description: >
@@ -46,18 +46,18 @@ inputs:
       configure additional hosts.
     default: true
   persist-credentials:
-    description: 'Whether to configure the token or SSH key with the local git config'
+    description: Whether to configure the token or SSH key with the local git config
     default: true
   path:
-    description: 'Relative path under $GITHUB_WORKSPACE to place the repository'
+    description: Relative path under $GITHUB_WORKSPACE to place the repository
   clean:
-    description: 'Whether to execute `git clean -ffdx && git reset --hard HEAD` before fetching'
+    description: Whether to execute `git clean -ffdx && git reset --hard HEAD` before fetching
     default: true
   fetch-depth:
-    description: 'Number of commits to fetch. 0 indicates all history for all branches and tags.'
+    description: Number of commits to fetch. 0 indicates all history for all branches and tags.
     default: 1
   lfs:
-    description: 'Whether to download Git-LFS files'
+    description: Whether to download Git-LFS files
     default: false
   submodules:
     description: >
